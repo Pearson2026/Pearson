@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Navbahor 2-son texnikum</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +14,14 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#f4f7fb;
-color:white;
 overflow-x:hidden;
 }
-
-/* HEADER */
 
 header{
 position:fixed;
@@ -33,9 +29,9 @@ top:0;
 left:0;
 width:100%;
 z-index:1000;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.75);
 backdrop-filter:blur(10px);
-padding:20px 0;
+padding:18px 0;
 }
 
 .container{
@@ -48,24 +44,26 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
 .logo{
-font-size:28px;
+font-size:34px;
 font-weight:700;
-color:#fff;
+color:white;
 }
 
 nav ul{
 display:flex;
 gap:25px;
 list-style:none;
+flex-wrap:wrap;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
-font-weight:500;
+font-weight:600;
 transition:.3s;
 }
 
@@ -73,13 +71,11 @@ nav ul li a:hover{
 color:gold;
 }
 
-/* HERO */
-
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('texnikum.jpg');
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -87,50 +83,43 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:20px;
-animation:bgZoom 15s infinite alternate;
+color:white;
+animation:bgzoom 12s infinite alternate;
 }
 
-@keyframes bgZoom{
-0%{
-background-size:100%;
-}
-100%{
-background-size:110%;
-}
+@keyframes bgzoom{
+0%{background-size:100%;}
+100%{background-size:110%;}
 }
 
-.hero-content h1{
-font-size:65px;
-margin-bottom:20px;
-animation:fadeDown 1s ease;
+.hero h1{
+font-size:75px;
+margin-bottom:25px;
 }
 
-.hero-content p{
-font-size:22px;
-max-width:850px;
-margin:auto;
+.hero p{
+font-size:24px;
+max-width:900px;
 line-height:1.8;
-animation:fadeUp 1s ease;
+margin:auto;
 }
 
 .btn{
 display:inline-block;
-margin-top:35px;
-padding:16px 40px;
+margin-top:40px;
+padding:18px 45px;
 background:gold;
 color:black;
 text-decoration:none;
 font-weight:700;
 border-radius:50px;
 transition:.4s;
-box-shadow:0 10px 25px rgba(255,215,0,.5);
+box-shadow:0 0 30px rgba(255,215,0,.8);
 }
 
 .btn:hover{
-transform:translateY(-5px) scale(1.05);
+transform:scale(1.08);
 }
-
-/* SECTION */
 
 section{
 padding:100px 20px;
@@ -138,60 +127,50 @@ padding:100px 20px;
 
 .title{
 text-align:center;
-font-size:45px;
-margin-bottom:60px;
+font-size:52px;
 color:#0057b8;
-position:relative;
+margin-bottom:20px;
 }
 
-.title::after{
-content:'';
-width:100px;
+.line{
+width:120px;
 height:5px;
 background:gold;
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-bottom:-15px;
-border-radius:10px;
+margin:0 auto 60px;
+border-radius:20px;
 }
 
-/* ABOUT */
-
-.about-box{
+.box{
 background:white;
 padding:50px;
-border-radius:25px;
-color:#222;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.box p,
+.box li{
+font-size:20px;
 line-height:2;
+color:#222;
 }
-
-.list li{
-margin-bottom:15px;
-font-size:18px;
-}
-
-/* CARDS */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+gap:35px;
 }
 
 .card{
 background:white;
-border-radius:25px;
+border-radius:30px;
 overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 transition:.5s;
-position:relative;
 }
 
 .card:hover{
 transform:translateY(-15px) scale(1.03);
-box-shadow:0 20px 40px rgba(0,0,0,.2);
+box-shadow:0 20px 40px rgba(0,0,0,.25);
 }
 
 .card img{
@@ -199,46 +178,54 @@ width:100%;
 height:240px;
 object-fit:cover;
 transition:.5s;
+display:block;
 }
 
 .card:hover img{
 transform:scale(1.1);
+filter:brightness(.7);
 }
 
 .card-content{
 padding:25px;
-color:#222;
 }
 
 .card-content h3{
-margin-bottom:15px;
+font-size:28px;
 color:#0057b8;
-font-size:24px;
+margin-bottom:15px;
 }
 
-/* ADVANTAGES */
+.card-content p{
+font-size:18px;
+line-height:1.8;
+color:#333;
+}
 
 .advantages{
 background:
 linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
-url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200');
+url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1600');
 background-size:cover;
 background-attachment:fixed;
 }
 
+.advantages .title{
+color:white;
+}
+
 .adv-box{
-background:rgba(255,255,255,.08);
+background:rgba(255,255,255,.1);
 backdrop-filter:blur(10px);
 padding:50px;
 border-radius:30px;
 }
 
 .adv-box li{
-margin-bottom:18px;
 font-size:20px;
+line-height:2;
+color:white;
 }
-
-/* FORM */
 
 form{
 background:white;
@@ -257,20 +244,20 @@ margin-bottom:20px;
 border:none;
 background:#f1f1f1;
 border-radius:15px;
-font-size:16px;
+font-size:17px;
 }
 
 form button{
 width:100%;
 padding:18px;
-border:none;
-border-radius:15px;
 background:#0057b8;
 color:white;
+border:none;
+border-radius:15px;
 font-size:20px;
 font-weight:600;
 cursor:pointer;
-transition:.4s;
+transition:.3s;
 }
 
 form button:hover{
@@ -278,26 +265,24 @@ background:#003f88;
 transform:scale(1.02);
 }
 
-/* CONTACT */
-
 .contact-box{
 background:white;
 padding:50px;
 border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-color:#222;
 text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
 .contact-box p{
-margin-bottom:20px;
-font-size:20px;
+font-size:22px;
+margin-bottom:18px;
+color:#222;
 }
 
 .socials a{
 display:inline-block;
 margin:10px;
-padding:12px 25px;
+padding:12px 28px;
 background:#0057b8;
 color:white;
 text-decoration:none;
@@ -306,53 +291,27 @@ transition:.3s;
 }
 
 .socials a:hover{
-transform:translateY(-5px);
 background:gold;
 color:black;
+transform:translateY(-5px);
 }
-
-/* FOOTER */
 
 footer{
 background:#111;
-padding:30px;
+color:white;
 text-align:center;
+padding:30px;
+font-size:18px;
 }
-
-/* ANIMATIONS */
-
-@keyframes fadeDown{
-from{
-opacity:0;
-transform:translateY(-40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* RESPONSIVE */
 
 @media(max-width:768px){
 
-.hero-content h1{
-font-size:40px;
+.hero h1{
+font-size:48px;
 }
 
-.hero-content p{
-font-size:18px;
+.hero p{
+font-size:19px;
 }
 
 nav{
@@ -361,12 +320,11 @@ gap:20px;
 }
 
 nav ul{
-flex-wrap:wrap;
 justify-content:center;
 }
 
 .title{
-font-size:34px;
+font-size:38px;
 }
 
 }
@@ -400,7 +358,7 @@ font-size:34px;
 
 <section class="hero">
 
-<div class="hero-content">
+<div>
 
 <h1>
 2026–2027 O‘quv Yili Qabuli
@@ -427,17 +385,18 @@ Ariza topshirish
 Biz haqimizda
 </h2>
 
-<div class="about-box">
+<div class="line"></div>
+
+<div class="box">
 
 <p>
 Texnikumimiz Pearson xalqaro dasturi asosida faoliyat yuritadi.
-O‘quvchilar zamonaviy kasblarni o‘rganish bilan birga
-chet tilini dars jarayonining o‘zida o‘rganadilar.
+O‘quvchilar zamonaviy kasblarni o‘rganish bilan birga chet tilini dars jarayonining o‘zida o‘rganadilar.
 </p>
 
 <br>
 
-<ul class="list">
+<ul>
 <li>🟢 Milliy davlat diplomi</li>
 <li>🌍 Pearson xalqaro diplomi</li>
 <li>🏫 Zamonaviy kampus muhiti</li>
@@ -458,38 +417,52 @@ chet tilini dars jarayonining o‘zida o‘rganadilar.
 Yo‘nalishlar
 </h2>
 
+<div class="line"></div>
+
 <div class="cards">
 
 <div class="card">
-<img src="grafika.jpg">
+
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200">
+
 <div class="card-content">
 <h3>💻 Kompyuter grafikasi va operatori</h3>
-<p>Grafik dizayn va kompyuter texnologiyalari.</p>
+<p>Grafik dizayn, Photoshop, web dizayn va kompyuter texnologiyalari.</p>
 </div>
+
 </div>
 
 <div class="card">
-<img src="elektrik.jpg">
+
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=1200">
+
 <div class="card-content">
 <h3>⚡ Elektromantyor</h3>
-<p>Elektr tizimlari va amaliy texnik bilimlar.</p>
+<p>Elektr tizimlari, sim ulash va zamonaviy texnik amaliyotlar.</p>
 </div>
+
 </div>
 
 <div class="card">
-<img src="payvand.jpg">
+
+<img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1200">
+
 <div class="card-content">
 <h3>🔥 Payvandlash</h3>
-<p>Zamonaviy payvandlash texnologiyalari.</p>
+<p>Professional payvandlash va metall biriktirish texnologiyalari.</p>
 </div>
+
 </div>
 
 <div class="card">
-<img src="metall.jpg">
+
+<img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1200">
+
 <div class="card-content">
 <h3>⚙ Metallarga ishlov berish</h3>
-<p>Metall bilan ishlash bo‘yicha amaliy ta’lim.</p>
+<p>Metall kesish, qayta ishlash va sanoat uskunalari bilan ishlash.</p>
 </div>
+
 </div>
 
 </div>
@@ -502,13 +475,15 @@ Yo‘nalishlar
 
 <div class="container">
 
-<h2 class="title" style="color:white;">
+<h2 class="title">
 Bizning Afzalliklarimiz
 </h2>
 
+<div class="line"></div>
+
 <div class="adv-box">
 
-<ul class="list">
+<ul>
 <li>🔹 Xalqaro toifadagi mutaxassislar</li>
 <li>🔹 Chet tilini o‘qish davomida o‘rganish</li>
 <li>🔹 Recommendation Letter orqali chet el imkoniyatlari</li>
@@ -532,24 +507,22 @@ Bizning Afzalliklarimiz
 Online Ariza
 </h2>
 
-<form id="admissionForm">
+<div class="line"></div>
 
-<input type="text" id="name" placeholder="F.I.O" required>
+<form>
 
-<input type="tel" id="phone" placeholder="Telefon raqam" required>
+<input type="text" placeholder="F.I.O" required>
 
-<input type="email" id="email" placeholder="Email" required>
+<input type="tel" placeholder="Telefon raqam" required>
 
-<select id="direction" required>
+<input type="email" placeholder="Email" required>
 
-<option value="">Yo‘nalishni tanlang</option>
+<select required>
 
+<option>Yo‘nalishni tanlang</option>
 <option>Kompyuter grafikasi va operatori</option>
-
 <option>Elektromantyor</option>
-
 <option>Payvandlash</option>
-
 <option>Metallarga ishlov berish</option>
 
 </select>
@@ -572,14 +545,13 @@ Ariza yuborish
 Kontakt
 </h2>
 
+<div class="line"></div>
+
 <div class="contact-box">
 
 <p>📍 Navbahor tumani, Beshrabod qo‘rg‘oni</p>
-
 <p>📞 +998 90 086 93 43</p>
-
 <p>📞 +998 88 820 79 78</p>
-
 <p>📞 +998 99 092 21 24</p>
 
 <div class="socials">
@@ -603,55 +575,6 @@ Telegram
 <footer>
 © 2026 Navbahor tumanidagi 2-son texnikum
 </footer>
-
-<script>
-
-document.getElementById("admissionForm").addEventListener("submit", function(e) {
-
-e.preventDefault();
-
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let email = document.getElementById("email").value;
-let direction = document.getElementById("direction").value;
-
-let message =
-`🎓 Yangi ariza!
-
-👤 F.I.O: ${name}
-📞 Telefon: ${phone}
-📧 Email: ${email}
-📚 Yo‘nalish: ${direction}`;
-
-fetch("https://api.telegram.org/botTOKEN/sendMessage", {
-
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-chat_id:"CHAT_ID",
-text:message
-})
-
-})
-
-.then(res=>res.json())
-
-.then(data=>{
-alert("Ariza muvaffaqiyatli yuborildi!");
-document.getElementById("admissionForm").reset();
-})
-
-.catch(err=>{
-alert("Xatolik yuz berdi!");
-});
-
-});
-
-</script>
 
 </body>
 </html>
