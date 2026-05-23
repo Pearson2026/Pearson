@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Navbahor 2-son texnikum</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -23,14 +27,16 @@ background:#f4f7fb;
 overflow-x:hidden;
 }
 
+/* HEADER */
+
 header{
 position:fixed;
 top:0;
 left:0;
 width:100%;
-z-index:1000;
 background:rgba(0,0,0,0.75);
 backdrop-filter:blur(10px);
+z-index:1000;
 padding:18px 0;
 }
 
@@ -71,25 +77,39 @@ nav ul li a:hover{
 color:gold;
 }
 
+/* HERO */
+
 .hero{
 height:100vh;
+
 background:
 linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
 url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600');
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+
 padding:20px;
 color:white;
+
 animation:bgzoom 12s infinite alternate;
 }
 
 @keyframes bgzoom{
-0%{background-size:100%;}
-100%{background-size:110%;}
+
+0%{
+background-size:100%;
+}
+
+100%{
+background-size:110%;
+}
+
 }
 
 .hero h1{
@@ -121,6 +141,8 @@ box-shadow:0 0 30px rgba(255,215,0,.8);
 transform:scale(1.08);
 }
 
+/* SECTION */
+
 section{
 padding:100px 20px;
 }
@@ -140,6 +162,8 @@ margin:0 auto 60px;
 border-radius:20px;
 }
 
+/* ABOUT */
+
 .box{
 background:white;
 padding:50px;
@@ -153,6 +177,8 @@ font-size:20px;
 line-height:2;
 color:#222;
 }
+
+/* CARDS */
 
 .cards{
 display:grid;
@@ -202,10 +228,13 @@ line-height:1.8;
 color:#333;
 }
 
+/* ADVANTAGES */
+
 .advantages{
 background:
 linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
 url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1600');
+
 background-size:cover;
 background-attachment:fixed;
 }
@@ -226,6 +255,8 @@ font-size:20px;
 line-height:2;
 color:white;
 }
+
+/* FORM */
 
 form{
 background:white;
@@ -265,6 +296,8 @@ background:#003f88;
 transform:scale(1.02);
 }
 
+/* CONTACT */
+
 .contact-box{
 background:white;
 padding:50px;
@@ -296,6 +329,8 @@ color:black;
 transform:translateY(-5px);
 }
 
+/* FOOTER */
+
 footer{
 background:#111;
 color:white;
@@ -303,6 +338,8 @@ text-align:center;
 padding:30px;
 font-size:18px;
 }
+
+/* RESPONSIVE */
 
 @media(max-width:768px){
 
@@ -330,11 +367,13 @@ font-size:38px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="container">
 
 <nav>
@@ -344,17 +383,26 @@ font-size:38px;
 </div>
 
 <ul>
+
 <li><a href="#about">Biz haqimizda</a></li>
+
 <li><a href="#directions">Yo‘nalishlar</a></li>
+
 <li><a href="#advantages">Afzalliklar</a></li>
+
 <li><a href="#apply">Qabul</a></li>
+
 <li><a href="#contact">Kontakt</a></li>
+
 </ul>
 
 </nav>
 
 </div>
+
 </header>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -377,6 +425,8 @@ Ariza topshirish
 
 </section>
 
+<!-- ABOUT -->
+
 <section id="about">
 
 <div class="container">
@@ -391,16 +441,22 @@ Biz haqimizda
 
 <p>
 Texnikumimiz Pearson xalqaro dasturi asosida faoliyat yuritadi.
-O‘quvchilar zamonaviy kasblarni o‘rganish bilan birga chet tilini dars jarayonining o‘zida o‘rganadilar.
+O‘quvchilar zamonaviy kasblarni o‘rganish bilan birga
+chet tilini dars jarayonining o‘zida o‘rganadilar.
 </p>
 
 <br>
 
 <ul>
+
 <li>🟢 Milliy davlat diplomi</li>
+
 <li>🌍 Pearson xalqaro diplomi</li>
+
 <li>🏫 Zamonaviy kampus muhiti</li>
+
 <li>🛏 130 kishilik yotoqxona</li>
+
 </ul>
 
 </div>
@@ -408,6 +464,8 @@ O‘quvchilar zamonaviy kasblarni o‘rganish bilan birga chet tilini dars jaray
 </div>
 
 </section>
+
+<!-- DIRECTIONS -->
 
 <section id="directions">
 
@@ -421,46 +479,82 @@ Yo‘nalishlar
 
 <div class="cards">
 
+<!-- IT -->
+
 <div class="card">
 
 <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200">
 
 <div class="card-content">
-<h3>💻 Kompyuter grafikasi va operatori</h3>
-<p>Grafik dizayn, Photoshop, web dizayn va kompyuter texnologiyalari.</p>
+
+<h3>
+💻 Kompyuter grafikasi va operatori
+</h3>
+
+<p>
+Grafik dizayn, Photoshop, web dizayn va kompyuter texnologiyalari.
+</p>
+
 </div>
 
 </div>
+
+<!-- ELECTRIC -->
 
 <div class="card">
 
 <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=1200">
 
 <div class="card-content">
-<h3>⚡ Elektromantyor</h3>
-<p>Elektr tizimlari, sim ulash va zamonaviy texnik amaliyotlar.</p>
+
+<h3>
+⚡ Elektromantyor
+</h3>
+
+<p>
+Elektr tizimlari, sim ulash va zamonaviy texnik amaliyotlar.
+</p>
+
 </div>
 
 </div>
+
+<!-- WELDING -->
 
 <div class="card">
 
 <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1200">
 
 <div class="card-content">
-<h3>🔥 Payvandlash</h3>
-<p>Professional payvandlash va metall biriktirish texnologiyalari.</p>
+
+<h3>
+🔥 Payvandlash
+</h3>
+
+<p>
+Professional payvandlash va metall biriktirish texnologiyalari.
+</p>
+
 </div>
 
 </div>
+
+<!-- METAL -->
 
 <div class="card">
 
 <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1200">
 
 <div class="card-content">
-<h3>⚙ Metallarga ishlov berish</h3>
-<p>Metall kesish, qayta ishlash va sanoat uskunalari bilan ishlash.</p>
+
+<h3>
+⚙ Metallarga ishlov berish
+</h3>
+
+<p>
+Metall kesish, qayta ishlash va sanoat uskunalari bilan ishlash.
+</p>
+
 </div>
 
 </div>
@@ -470,6 +564,8 @@ Yo‘nalishlar
 </div>
 
 </section>
+
+<!-- ADVANTAGES -->
 
 <section class="advantages" id="advantages">
 
@@ -484,13 +580,21 @@ Bizning Afzalliklarimiz
 <div class="adv-box">
 
 <ul>
+
 <li>🔹 Xalqaro toifadagi mutaxassislar</li>
+
 <li>🔹 Chet tilini o‘qish davomida o‘rganish</li>
+
 <li>🔹 Recommendation Letter orqali chet el imkoniyatlari</li>
+
 <li>🔹 Chet elda malaka oshirgan ustozlar</li>
+
 <li>🔹 Zamonaviy kampus muhiti</li>
+
 <li>🔹 130 kishilik yotoqxona mavjud</li>
+
 <li>🔹 2 ta diplom beriladi</li>
+
 </ul>
 
 </div>
@@ -498,6 +602,8 @@ Bizning Afzalliklarimiz
 </div>
 
 </section>
+
+<!-- FORM -->
 
 <section id="apply">
 
@@ -509,21 +615,35 @@ Online Ariza
 
 <div class="line"></div>
 
-<form>
+<form id="admissionForm">
 
-<input type="text" placeholder="F.I.O" required>
+<input type="text" id="name" placeholder="F.I.O" required>
 
-<input type="tel" placeholder="Telefon raqam" required>
+<input type="tel" id="phone" placeholder="Telefon raqam" required>
 
-<input type="email" placeholder="Email" required>
+<input type="email" id="email" placeholder="Email" required>
 
-<select required>
+<select id="direction" required>
 
-<option>Yo‘nalishni tanlang</option>
-<option>Kompyuter grafikasi va operatori</option>
-<option>Elektromantyor</option>
-<option>Payvandlash</option>
-<option>Metallarga ishlov berish</option>
+<option value="">
+Yo‘nalishni tanlang
+</option>
+
+<option>
+Kompyuter grafikasi va operatori
+</option>
+
+<option>
+Elektromantyor
+</option>
+
+<option>
+Payvandlash
+</option>
+
+<option>
+Metallarga ishlov berish
+</option>
 
 </select>
 
@@ -537,6 +657,8 @@ Ariza yuborish
 
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
 
 <div class="container">
@@ -549,10 +671,21 @@ Kontakt
 
 <div class="contact-box">
 
-<p>📍 Navbahor tumani, Beshrabod qo‘rg‘oni</p>
-<p>📞 +998 90 086 93 43</p>
-<p>📞 +998 88 820 79 78</p>
-<p>📞 +998 99 092 21 24</p>
+<p>
+📍 Navbahor tumani, Beshrabod qo‘rg‘oni
+</p>
+
+<p>
+📞 +998 90 086 93 43
+</p>
+
+<p>
+📞 +998 88 820 79 78
+</p>
+
+<p>
+📞 +998 99 092 21 24
+</p>
 
 <div class="socials">
 
@@ -572,9 +705,69 @@ Telegram
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
 © 2026 Navbahor tumanidagi 2-son texnikum
+
 </footer>
+
+<!-- TELEGRAM BOT -->
+
+<script>
+
+document.getElementById("admissionForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let email = document.getElementById("email").value;
+let direction = document.getElementById("direction").value;
+
+let message =
+`🎓 Yangi ariza!
+
+👤 F.I.O: ${name}
+📞 Telefon: ${phone}
+📧 Email: ${email}
+📚 Yo‘nalish: ${direction}`;
+
+fetch("https://api.telegram.org/bot8927741192:AAHHZJlICckXrwPi_SzaPSw2joHPAQgEXrs/sendMessage", {
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+chat_id:"7743075618",
+text:message
+})
+
+})
+
+.then(response => response.json())
+
+.then(data => {
+
+alert("Ariza muvaffaqiyatli yuborildi!");
+
+document.getElementById("admissionForm").reset();
+
+})
+
+.catch(error => {
+
+alert("Xatolik yuz berdi!");
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
